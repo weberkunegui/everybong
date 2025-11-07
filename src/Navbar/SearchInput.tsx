@@ -13,7 +13,9 @@ import { User } from "firebase/auth";
 type SearchInputProps = {
   user?: User | null;
 };
-
+// 파일에 존속에 대해 고민 중...
+// 익명 커뮤니티에 검색 기능이 필요할까?
+// Reference로 삼고 있는 에브라타임에선 검색 기능이 없긴 함.
 const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
   const bg = useColorModeValue("gray.100", "whiteAlpha.100");
   const iconColor = useColorModeValue("gray.300", "white");
@@ -28,7 +30,7 @@ const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
         </InputLeftElement>
         <Input
           type="tel"
-          placeholder="Search Reddit"
+          placeholder="게시글 검색"
           fontSize="10pt"
           bg={bg}
           _placeholder={{ colors: "gray.500" }}
