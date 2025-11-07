@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\atoms",
+    "\\src\\chakra",
+    "\\src\\components",
+    "\\src\\components\\common",
+    "\\src\\components\\Community",
+    "\\src\\Navbar"
   ],
+  "SelectedNode": "\\src\\Navbar\\SearchInput.tsx",
   "PreviewInSolutionExplorer": false
 }

@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import {
   Flex,
   Input,
@@ -13,9 +13,12 @@ import { User } from "firebase/auth";
 type SearchInputProps = {
   user?: User | null;
 };
-// ���Ͽ� ���ӿ� ���� ���� ��...
-// �͸� Ŀ�´�Ƽ�� �˻� ����� �ʿ��ұ�?
-// Reference�� ��� �ִ� �����Ÿ�ӿ��� �˻� ����� ���� ��.
+// 파일 존속에 대해 고민 중...
+// 익명 커뮤니티에 검색 기능이 필요할까?
+// Firebase에선 일정 용량을 넘으면 추가 비용이 지출되잖애;; 여유 확보할라면 주기적으로 글 삭제가 필요할수도...
+// 多分僕の私費で使うだろう...
+// マジで僕クソ超貧乏だからさ...　えぐいじゃん...　だからさ...　無駄なコストは避けたいんだよね...
+// 주기적 글삭-> 검색 필요 無긴해
 const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
   const bg = useColorModeValue("gray.100", "whiteAlpha.100");
   const iconColor = useColorModeValue("gray.300", "white");
@@ -30,7 +33,7 @@ const SearchInput: React.FC<SearchInputProps> = ({ user }) => {
         </InputLeftElement>
         <Input
           type="tel"
-          placeholder="�Խñ� �˻�"
+          placeholder="검색…"
           fontSize="10pt"
           bg={bg}
           _placeholder={{ colors: "gray.500" }}
