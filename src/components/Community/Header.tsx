@@ -70,7 +70,7 @@ const Header: React.FC<HeaderProps> = ({ communityData }) => {
                 onJoinOrCommunity(communityData, isJoined);
               }}
             >
-              {isJoined ? "Joined" : "Join"}
+              {isJoined ? "이미 참여중" : "참여하기"}
             </Button>
           </Flex>
         </Flex>

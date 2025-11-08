@@ -36,4 +36,5 @@ const Premium: React.FC = () => {
     </Flex>
   );
 };
-export default Premium;
+//export default Premium;
+//Dummy 파일 (삭제된 기능 보관용)

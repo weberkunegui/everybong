@@ -149,7 +149,7 @@ function ProfileSide({}: Props) {
         gap={20}
       >
         <Icon as={IoShirtOutline} />
-        Style Your Avatar
+              프로필을 꾸며보세요
       </Button>
       <Flex justify="center" gap={20} pt={5} pb={5}>
         <Stack>

@@ -73,7 +73,7 @@ const About: React.FC<AboutProps> = ({ communityData }) => {
         borderRadius="4px 4px 0px 0px"
       >
         <Text fontSize="10pt" fontWeight={700}>
-          About Community
+          게시판 정보
         </Text>
         <Icon as={HiOutlineDotsHorizontal} cursor="pointer" />
       </Flex>
@@ -82,11 +82,11 @@ const About: React.FC<AboutProps> = ({ communityData }) => {
           <Flex width="100%" p={2} fontSize="10pt" fontWeight={700}>
             <Flex direction="column" flexGrow={1}>
               <Text>{communityData.numberOfMembers.toLocaleString()}</Text>
-              <Text>Members</Text>
+              <Text>구성원</Text>
             </Flex>
             <Flex direction="column" flexGrow={1}>
               <Text>1</Text>
-              <Text>Online</Text>
+              <Text>접속 중</Text>
             </Flex>
           </Flex>
           <Divider />
@@ -127,7 +127,7 @@ const About: React.FC<AboutProps> = ({ communityData }) => {
                     _hover={{ textDecoration: "underline" }}
                     onClick={() => selectedFieldRef.current?.click()}
                   >
-                    Change Image
+                    이미지 변경
                   </Text>
                   {communityData.imageURL || selectedFile ? (
                     <Image
@@ -150,7 +150,7 @@ const About: React.FC<AboutProps> = ({ communityData }) => {
                     <Spinner />
                   ) : (
                     <Text cursor="pointer" onClick={onUploadingImage}>
-                      Save Changes
+                      변경 사항 저장
                     </Text>
                   ))}
                 <input

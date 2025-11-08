@@ -59,7 +59,7 @@ const PersonalHome: React.FC = () => {
               setOpen(true);
             }}
           >
-            Create Community
+            게시판 개설 (준비 중)
           </Button>
         </Stack>
       </Flex>
